@@ -2,10 +2,10 @@ package com.example.coolweather.db;
 
 import org.litepal.crud.DataSupport;
 
-public class City extends DataSupport {
+public class City {
     private int id;
     private String cityname;
-    private int citycode;
+    private String citycode;
     private int provinceid;
     public int getId(){
         return id;
@@ -19,10 +19,10 @@ public class City extends DataSupport {
     public void setCityname(String cityname){
         this.cityname=cityname;
     }
-    public int getCitycode(){
+    public String getCitycode(){
         return citycode;
     }
-    public void setCitycode(int citycode){
+    public void setCitycode(String citycode){
         this.citycode=citycode;
     }
     public int getProvinceid(){
